@@ -1,0 +1,251 @@
+/* Custom Styles */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navigation active state */
+.nav-btn.active {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.nav-btn.active:hover {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-active {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.status-inactive {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.status-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status-expired {
+    background-color: #f3f4f6;
+    color: #6b7280;
+}
+
+/* Plan badges */
+.plan-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.plan-premium {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: white;
+}
+
+.plan-free {
+    background-color: #f3f4f6;
+    color: #6b7280;
+}
+
+.plan-enterprise {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    color: white;
+}
+
+/* Subscription badges */
+.subscription-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.subscription-paid {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+}
+
+.subscription-free {
+    background-color: #f3f4f6;
+    color: #6b7280;
+}
+
+.subscription-trial {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    color: white;
+}
+
+/* Role badges */
+.role-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.role-owner {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+}
+
+.role-admin {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+}
+
+.role-user {
+    background-color: #f3f4f6;
+    color: #6b7280;
+}
+
+/* Card hover effects */
+.team-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #3b82f6;
+}
+
+/* Table row hover */
+#usersTableBody tr {
+    transition: background-color 0.2s ease;
+}
+
+#usersTableBody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Form focus states */
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Notification animation */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutDown {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+/* Loading spinner */
+.spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3b82f6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Gradient backgrounds */
+.gradient-primary {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+.gradient-success {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.gradient-warning {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.gradient-danger {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* Custom scrollbar for modal */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Date input styling */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #f3f4f6;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background-color: #e5e7eb;
+}
